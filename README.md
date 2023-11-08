@@ -7,60 +7,179 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+##About the API/Sobre a API
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+For correct operation you need an API for integration with a data structure like the example below and the path to the API must be changed to yours in the NotasFiscalsController.php methods
+Para o correto funcionamento é necessária uma API para integração com uma estrutura de dados como o exemplo abaixo e o caminho da API deve ser alterado para o seu nos métodos NotasFiscalsController.php
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+[
+    {
+        "chave": "55200423326986000190000309355",
+        "numero": "000309355",
+        "dest": {
+            "nome": "TERRITORIAL TRANSPORTES E EMPREEDIMENTOS",
+            "cod": "03889255000145"
+        },
+        "cnpj_remete": "23326986000190",
+        "nome_remete": "CARVALHO ONIBUS LTDA",
+        "nome_transp": "CARVALHO PECAS E ONIBUS",
+        "cnpj_transp": "23326986000190",
+        "status": "COMPROVADO",
+        "valor": "100.00",
+        "volumes": "2",
+        "dt_emis": "16/04/2020 15:51:24",
+        "dt_entrega": "17/04/2020 20:11:00"
+    },
+    {
+        "chave": "55200423326986000190000309356",
+        "numero": "000309356",
+        "dest": {
+            "nome": "TERRITORIAL TRANSPORTES E EMPREEDIMENTOS",
+            "cod": "03889255000226"
+        },
+        "cnpj_remete": "23326986000190",
+        "nome_remete": "CARVALHO ONIBUS LTDA",
+        "nome_transp": "CARVALHO PECAS E ONIBUS",
+        "cnpj_transp": "23326986000190",
+        "status": "COMPROVADO",
+        "valor": "110.47",
+        "volumes": "2",
+        "dt_emis": "16/04/2020 15:51:39",
+        "dt_entrega": "17/04/2020 10:51:39"
+    },
+    {
+        "chave": "55200423326986000190000309347",
+        "numero": "000309347",
+        "dest": {
+            "nome": "SANTOS DUMONT TRANSPORTES EIRELI",
+            "cod": "22900414000100"
+        },
+        "cnpj_remete": "23326986000190",
+        "nome_remete": "CARVALHO ONIBUS LTDA",
+        "nome_transp": "CARVALHO PECAS E ONIBUS",
+        "cnpj_transp": "23326986000190",
+        "status": "ABERTO",
+        "valor": "348.60",
+        "volumes": "1",
+        "dt_emis": "16/04/2020 15:04:13"
+    },
+    {
+        "chave": "55200423326986000190000309349",
+        "numero": "000309349",
+        "dest": {
+            "nome": "EMPRESA SAO GONCALO LTDA",
+            "cod": "19792977000117"
+        },
+        "cnpj_remete": "23326986000190",
+        "nome_remete": "CARVALHO ONIBUS LTDA",
+        "nome_transp": "CARVALHO PECAS E ONIBUS",
+        "cnpj_transp": "23326986000190",
+        "status": "COMPROVADO",
+        "valor": "209.00",
+        "volumes": "1",
+        "dt_emis": "16/04/2020 15:05:18",
+        "dt_entrega": "19/04/2020 09:05:18"
+    },
+    {
+        "chave": "55200466438011000166003473488",
+        "numero": "003473488",
+        "dest": {
+            "cod": "10636110000106",
+            "nome": "HUGO ADRIANO LIDUARIO"
+        },
+        "cnpj_remete": "66438011000166",
+        "nome_remete": "DIST CENTRO OESTE DE MEDICAMENTOS L",
+        "nome_transp": "PH LOGISTICA LTDA",
+        "cnpj_transp": "12227730000109",
+        "status": "COMPROVADO",
+        "valor": "295.54",
+        "volumes": "5",
+        "dt_emis": "09/04/2020 13:00:05",
+        "dt_entrega": "15/04/2020 23:51:23"
+    },
+    {
+        "chave": "55200466438011000166003474193",
+        "numero": "003474193",
+        "dest": {
+            "cod": "13372913000180",
+            "nome": "DROG. E DRUGSTORE SOUZA LTDA - ME"
+        },
+        "cnpj_remete": "66438011000166",
+        "nome_remete": "DIST CENTRO OESTE DE MEDICAMENTOS L",
+        "nome_transp": "PH LOGISTICA LTDA",
+        "cnpj_transp": "12227730000109",
+        "status": "COMPROVADO",
+        "valor": "64.35",
+        "volumes": "1",
+        "dt_emis": "13/04/2020 13:00:05",
+        "dt_entrega": "18/04/2020 11:12:14"
+    },
+    {
+        "chave": "55200466438011000166003477786",
+        "numero": "003477786",
+        "dest": {
+            "cod": "09396401000853",
+            "nome": "M.H.L DROGARIA LTDA - ME"
+        },
+        "cnpj_remete": "66438011000166",
+        "nome_remete": "DIST CENTRO OESTE DE MEDICAMENTOS L",
+        "nome_transp": "PH LOGISTICA LTDA",
+        "cnpj_transp": "12227730000109",
+        "status": "ABERTO",
+        "valor": "205.38",
+        "volumes": "13",
+        "dt_emis": "15/04/2020 13:00:05"
+    },
+    {
+        "chave": "55200344463156002128000905124",
+        "numero": "000905124",
+        "dest": {
+            "cod": "23439696000152",
+            "nome": "39505 - DROGARIA FARIA EAMP VALADARES LTDA - ME"
+        },
+        "cnpj_remete": "44463156002128",
+        "nome_remete": "SERVIMED COMERCIAL LTDA",
+        "nome_transp": "PH LOGISTICA LTDA",
+        "cnpj_transp": "12227730000109",
+        "status": "ABERTO",
+        "valor": "187.33",
+        "volumes": "3",
+        "dt_emis": "31/03/2020 13:00:05"
+    },
+    {
+        "chave": "55200344463156002128000905498",
+        "numero": "000905498",
+        "dest": {
+            "cod": "23439696000233",
+            "nome": "DROGARIA FARIA VALADARES LTDA"
+        },
+        "cnpj_remete": "44463156002128",
+        "nome_remete": "SERVIMED COMERCIAL LTDA",
+        "nome_transp": "PH LOGISTICA LTDA",
+        "cnpj_transp": "12227730000109",
+        "status": "COMPROVADO",
+        "valor": "136.16",
+        "volumes": "2",
+        "dt_emis": "30/03/2020 13:00:05",
+        "dt_entrega": "31/03/2020 15:00:05"
+    },
+    {
+        "chave": "55200344463156002128000906164",
+        "numero": "000906164",
+        "dest": {
+            "cod": "11486048000178",
+            "nome": "PEDRO MUSSOLINE DE CARVALHO NETO EIRELI ME"
+        },
+        "cnpj_remete": "44463156002128",
+        "nome_remete": "SERVIMED COMERCIAL LTDA",
+        "nome_transp": "PH LOGISTICA LTDA",
+        "cnpj_transp": "12227730000109",
+        "status": "COMPROVADO",
+        "valor": "156.08",
+        "volumes": "4",
+        "dt_emis": "31/03/2020 13:00:05",
+        "dt_entrega": "01/04/2020 15:00:05"
+    }
+]
