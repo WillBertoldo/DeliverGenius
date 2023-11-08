@@ -1,0 +1,64 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "DeliverGenius",
+        "description": "Faz a integração com outra API e processa os dados, agrupando e possibilitando a busca por remetente.",
+        "contact": {
+            "name": "William Bertoldo",
+            "email": "williambertoldob@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/processar-notas": {
+            "get": {
+                "tags": [
+                    "Notas Fiscais"
+                ],
+                "summary": "Processar notas fiscais",
+                "description": "Agrupa notas, calcula valores, etc.",
+                "operationId": "processarNotas",
+                "responses": {
+                    "200": {
+                        "description": "Operação bem-sucedida"
+                    },
+                    "400": {
+                        "description": "Requisição inválida"
+                    }
+                }
+            }
+        },
+        "/buscar-por-remetente/{cnpj}": {
+            "get": {
+                "tags": [
+                    "Notas Fiscais"
+                ],
+                "summary": "Buscar notas fiscais por remetente",
+                "description": "Retorna as notas fiscais de um remetente específico",
+                "operationId": "buscarPorRemetente",
+                "parameters": [
+                    {
+                        "name": "cnpj",
+                        "in": "path",
+                        "description": "CNPJ do remetente",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Operação bem-sucedida"
+                    },
+                    "400": {
+                        "description": "Requisição inválida"
+                    },
+                    "404": {
+                        "description": "Nenhuma nota fiscal encontrada para o CNPJ especificado"
+                    }
+                }
+            }
+        }
+    }
+}
