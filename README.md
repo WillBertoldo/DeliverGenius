@@ -8,7 +8,7 @@
 </p>
 
 
-##About the API/Sobre a API
+#About the API/Sobre a API
 
 For correct operation you need an API for integration with a data structure like the example below and the path to the API must be changed to yours in the NotasFiscalsController.php methods
 Para o correto funcionamento é necessária uma API para integração com uma estrutura de dados como o exemplo abaixo e o caminho da API deve ser alterado para o seu nos métodos NotasFiscalsController.php
